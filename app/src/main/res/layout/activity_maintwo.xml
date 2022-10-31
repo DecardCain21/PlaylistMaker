@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#3772E7"
+    android:paddingVertical="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="start"
+        android:text="@string/title_appname"
+        android:textAppearance="@style/title" />
+
+    <Button
+        android:id="@+id/button_bigOne"
+        android:layout_width="328dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/main_button"
+        android:layout_weight="1"
+        app:cornerRadius="@dimen/cornerRadius"
+        android:text="@string/search_name"
+        android:textAllCaps="false"
+        android:textColor="@color/main_text"
+        android:textSize="@dimen/text_size"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconSize="17dp"
+        app:iconTint="@color/main_text" />
+
+    <Button
+        android:id="@+id/button_bigTwo"
+        android:layout_width="328dp"
+        android:layout_height="220dp"
+
+        android:backgroundTint="@color/main_button"
+        android:layout_weight="1"
+        app:cornerRadius="@dimen/cornerRadius"
+        android:text="@string/medialibrary_name"
+        android:textAllCaps="false"
+        android:textColor="@color/main_text"
+        android:textSize="@dimen/text_size"
+        app:icon="@drawable/ic_medialibrary"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconSize="17dp"
+        app:iconTint="@color/main_text" />
+
+    <Button
+        android:id="@+id/button_bigThree"
+        android:layout_width="328dp"
+        android:layout_height="220dp"
+
+        android:backgroundTint="@color/main_button"
+        android:layout_weight="1"
+        app:cornerRadius="@dimen/cornerRadius"
+        android:text="@string/settings_name"
+        android:textAllCaps="false"
+        android:textColor="@color/main_text"
+        android:textSize="@dimen/text_size"
+        app:icon="@drawable/ic_settings"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        app:iconSize="17dp"
+        app:iconTint="@color/main_text" />
+
+
+</LinearLayout>

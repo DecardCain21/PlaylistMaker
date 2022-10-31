@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3772E7"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/title_appname"
+        android:textAppearance="@style/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/button_bigOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_big"
+        app:constraint_referenced_ids="vector_search,t_search"
+        app:flow_firstHorizontalStyle="packed"
+        app:flow_horizontalGap="10dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toTopOf="@id/button_bigTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <View
+        android:id="@+id/vector_search"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:background="@drawable/ic_search" />
+
+    <TextView
+        android:id="@+id/t_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_name"
+        android:textAppearance="@style/s_maintext" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/button_bigTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_big"
+        app:constraint_referenced_ids="vector_media,t_medialib"
+        app:flow_firstHorizontalStyle="packed"
+        app:flow_horizontalGap="10dp"
+        app:layout_constraintBottom_toTopOf="@id/button_bigThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_bigOne" />
+
+    <View
+        android:id="@+id/vector_media"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_medialibrary" />
+
+    <TextView
+        android:id="@+id/t_medialib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medialibrary_name"
+        android:textAppearance="@style/s_maintext" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/button_bigThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_big"
+        app:constraint_referenced_ids="vector_settings,t_settings"
+        app:flow_horizontalGap="10dp"
+        app:flow_horizontalStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_bigTwo" />
+
+    <View
+        android:id="@+id/vector_settings"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_settings" />
+
+    <TextView
+        android:id="@+id/t_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_name"
+        android:textAppearance="@style/s_maintext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
